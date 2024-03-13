@@ -46,7 +46,11 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     final text = "";
+
+    final unusedVariable = 1;
   }
+
+  void _unusedMethod() {}
 
   @override
   Widget build(BuildContext context) {
