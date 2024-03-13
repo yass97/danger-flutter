@@ -38,6 +38,16 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _increment() {
+    setState(() => _counter++);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    final text = "";
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -60,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: _increment,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
